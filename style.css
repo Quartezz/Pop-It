@@ -7,7 +7,6 @@
     --primary-text: #000000;
 }
 
-
 * {
     padding: 0;
     margin: 0;
@@ -22,7 +21,6 @@ body {
 }
 
 /* Header */
-
 .header {
     display: flex;
     width: 100%;
@@ -44,8 +42,7 @@ body {
     color: var(--primary-text);
 }
 
-/* Section Pop It */
-
+/* Main Pop It */
 .main-pop-it {
     position: relative;
     background-image: url("./images/background2.png");
@@ -58,11 +55,11 @@ body {
     min-height: 102vh;
 }
 
-.pop-it__container {
+.main-pop-it__container {
     display: flex;
 }
 
-.pop-it__container-left {
+.main-pop-it__container-left {
     display: flex;
     flex-direction: column;
     width: 50%;
@@ -72,18 +69,18 @@ body {
     margin-top: 5rem;
 }
 
-.pop-it__title {
+.main-pop-it__title {
     font-size: 12rem;
 }
 
-.pop-it__description {
+.main-pop-it__description {
     margin-top: -3rem;
     font-size: 2rem;
     font-weight: bold;
     width: 85%;
 }
 
-.pop-it__button {
+.main-pop-it__button {
     margin-top: 5rem;
     border: none;
     background-color: var(--primary-green);
@@ -92,6 +89,7 @@ body {
     font-weight: 700;
 }
 
+/* Main What Is Pop */
 .main-what-is-pop {
     display: flex;
     flex-direction: column;
@@ -100,56 +98,68 @@ body {
     padding: 6rem 16rem;
 }
 
-.h2-center {
+.main-what-is-pop__title {
     font-weight: 800;
     font-size: x-large;
 }
 
+/* Main Choose */
 .main-choose {
     text-align: center;
     background-color: var(--primary-green);
     padding: 6rem;
 }
 
-.items-container {
+.main-choose__title {
+    font-weight: 800;
+}
+
+.main-choose__items-container {
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 2rem 12rem;
 }
 
-.items-container__item--img {
+.main-choose__items-container-item-img {
     width: 8rem;
 }
 
-.items-container__item--p {
+.main-choose__items-container-item-p {
     font-weight: bold;
 }
 
-.btn-buy {
+.main-choose__btn-buy {
     background-color: var(--primary-orange);
     padding: .5rem 3.5rem;
     border: none;
     margin-top: .75rem;
 }
 
+/* Main Rules */
 .main-rules {
     display: flex;
     background-image: url("./images/bg-grid2.png");
-    background-position: 17rem 10rem;
+    background-position: 15rem 10rem;
     background-repeat: no-repeat;
     padding: 8rem 12rem;
     align-items: center;
     justify-content: center;
     gap: 5rem;
     margin-bottom: 5rem;
-    
 }
 
-.photo-rules {
+.main-rules__text {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.main-rules__photo {
     width: 35%;
 }
 
+/* Footer */
 .footer {
     width: 100%;
     background-color: var(--primary-black);
