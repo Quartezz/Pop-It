@@ -53,6 +53,7 @@ body {
     background-color: var(--primary-red);
     padding-left: 12rem;
     min-height: 102vh;
+    padding-bottom: 5rem;
 }
 
 .main-pop-it__container {
@@ -65,7 +66,7 @@ body {
     width: 50%;
     color: var(--primary-white);
     justify-content: center;
-    align-items: flex-start;
+    align-items: center;
     margin-top: 5rem;
 }
 
@@ -121,6 +122,10 @@ body {
     padding: 2rem 12rem;
 }
 
+.main-choose__items-container-item {
+    min-width: min-content;
+}
+
 .main-choose__items-container-item-img {
     width: 8rem;
 }
@@ -143,6 +148,11 @@ body {
     margin: 2rem;
 }
 
+.main-choose__btn-container {
+    display: flex;
+    justify-content: center;
+}
+
 /* Main Rules */
 .main-rules {
     display: flex;
@@ -163,7 +173,7 @@ body {
 }
 
 .main-rules__photo {
-    width: 35%;
+    min-width: 20rem;
 }
 
 /* Footer */
@@ -194,4 +204,114 @@ a {
 
 button {
     cursor: pointer;
+}
+
+@media (max-width: 1730px) {
+    
+    .main-pop-it {
+        background-image: none;
+        background-color: var(--primary-red);
+    }
+
+
+    
+}
+
+
+@media (max-width: 1000px) {
+    .header {
+        justify-content: center;
+        gap: 2rem;
+        padding: 1rem;
+    }
+    .header__links-ul {
+        gap: 2rem;
+    }
+
+    .main-pop-it {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .main-pop-it__container {
+        justify-content: center;
+        align-items: center;
+    }
+
+    .main-pop-it__container-left {
+        text-align: center;
+    }
+
+    .main-pop-it__title {
+        font-size: 8rem;
+    }
+
+    .main-rules {
+        padding: 2rem 8rem;
+    }
+
+    .footer {
+        padding: 1rem 4rem;
+    }
+}
+
+
+@media (max-width: 800px) {
+    
+    .main-what-is-pop {
+        padding: 2rem 8rem;
+    }
+
+    .main-choose__items-container {
+        padding: 0;
+    }
+
+    .main-choose__btn-container {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    } 
+
+    .main-rules {
+        background-image: none;
+        flex-direction: column;
+    }
+    
+    .main-rules__photo {
+        width: 50%;
+    }
+
+    .footer__links-ul {
+        flex-direction: column;
+        gap: 1rem;
+    }
+ }
+
+@media (max-width: 550px) {
+   .header {
+    font-size: medium;
+    flex-direction: column;
+   }
+
+   .main-pop-it__title {
+    font-size: 5rem;
+    margin-bottom: 2rem;
+    }
+
+    .main-pop-it__description {
+        font-size: x-large;
+    }
+
+    .main-what-is-pop {
+        padding: 1rem 4rem;
+    }
+
+    .main-rules {
+        padding: 1rem 2rem;
+    }
+
+    .main-rules__photo {
+        width: 30%;
+    }
+    
 }
