@@ -117,7 +117,7 @@ body {
 .main-choose__items-container {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     padding: 2rem 12rem;
 }
 
@@ -134,6 +134,13 @@ body {
     padding: .5rem 3.5rem;
     border: none;
     margin-top: .75rem;
+}
+
+.main-choose__btn-carousel {
+    background-color: var(--primary-orange);
+    border: none;
+    padding: 1rem 3rem;
+    margin: 2rem;
 }
 
 /* Main Rules */
