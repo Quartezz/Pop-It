@@ -3,7 +3,124 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
     <title>Pop It!</title>
+    <link rel="stylesheet" href="./style.css" />
   </head>
-  <body></body>
+  <body>
+    <header class="header">
+      <p class="header__p">NOT_A_BUBBLE.COM</p>
+      <div class="header__links">
+        <ul class="header__links-ul">
+          <li class="header__links-li">
+            <a href="/About" class="header__link">About</a>
+          </li>
+          <li class="header__links-li">
+            <a href="/Sale" class="header__link">Sale</a>
+          </li>
+          <li class="header__links-li">
+            <a href="/Contacts" class="header__link">Contacts</a>
+          </li>
+        </ul>
+      </div>
+    </header>
+    <main>
+      <section class="main-pop-it">
+        <div class="pop-it__container">
+          <div class="pop-it__container-left">
+            <h1 class="pop-it__title">POP IT!</h1>
+            <p class="pop-it__description">
+              Best Antistress Toy is the Endless toy bubble wrap!
+            </p>
+            <button class="pop-it__button">BUY</button>
+          </div>
+        </div>
+      </section>
+      <section class="main-what-is-pop">
+        <h2 class="h2-center">What is Pop it exactly?</h2>
+        <p>
+          This is a child's game, in which the process can be compared to the
+          bursting of a bubble wrap. But
+          <br />
+          unlike film, pop-it can be pressed with the same characteristic
+          sensations and sounds "endlessly":
+          <br />
+          dozens of silicone bubbles are simply squeezed out in the other
+          direction
+        </p>
+      </section>
+      <section class="main-choose">
+        <h2 class="h2-center">Choose your Pop-It</h2>
+        <div class="items-container">
+          <div class="items-container__item">
+            <img
+              class="items-container__item--img"
+              src="./images/square.png"
+              alt="Square"
+            />
+            <p class="items-container__item--p">Multicolored square</p>
+            <button class="btn-buy">BUY</button>
+          </div>
+          <div class="items-container__item">
+            <img
+              class="items-container__item--img"
+              src="./images/amongus.png"
+              alt="Amongus"
+            />
+            <p class="items-container__item--p">Among Us, marbled</p>
+            <button class="btn-buy">BUY</button>
+          </div>
+          <div class="items-container__item">
+            <img
+              class="items-container__item--img"
+              src="./images/round.png"
+              alt="Round"
+            />
+            <p class="items-container__item--p">Multicolored round</p>
+            <button class="btn-buy">BUY</button>
+          </div>
+        </div>
+      </section>
+      <section class="main-rules">
+        <div class="main-rules__text">
+          <h2 class="h2-center">Rules of the game</h2>
+          <p>
+            Players take turns and click on the bumps. It is imperative to
+            finish the row that you <br />
+            started. You can press a maximum of 3 bubbles at the same time (they
+            must be near,<br />
+            you cannot press several pimples at once, if they are not close to
+            each other) The task <br />
+            is to make the opponent go last. Who went last - he lost!
+          </p>
+        </div>
+        <img class="photo-rules" src="./images/photo.jpg" alt="bg-grid2" />
+      </section>
+    </main>
+    <footer class="footer">
+      <ul class="footer__links-ul">
+        <li class="footer__links-li">
+          <a href="/About" class="footer__link--bold">NOT_A_BUBBLE.COM</a>
+        </li>
+        <li class="footer__links-li">
+          <a href="/About" class="footer__link">Payment Methods</a>
+        </li>
+        <li class="footer__links-li">
+          <a href="/Sale" class="footer__link">Delivery</a>
+        </li>
+        <li class="footer__links-li">
+          <a href="/Contacts" class="footer__link">Wholesale</a>
+        </li>
+        <li class="footer__links-li">
+          <a href="/Contacts" class="footer__link">Contacts</a>
+        </li>
+      </ul>
+    </footer>
+    <script src="./main.js"></script>
+  </body>
 </html>

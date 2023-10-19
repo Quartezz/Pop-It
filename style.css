@@ -1,0 +1,180 @@
+:root {
+    --primary-red: #FC2E20;
+    --primary-white: #FFFFFF;
+    --primary-green: #9CFC50;
+    --primary-orange: #FE7F20;
+    --primary-black: #333333;
+    --primary-text: #000000;
+}
+
+
+* {
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+}
+
+/* Header */
+
+.header {
+    display: flex;
+    width: 100%;
+    padding: 3rem 12rem;
+    font-weight: bold;
+    font-size: large;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--primary-red);
+}
+
+.header__links-ul {
+    display: flex;
+    gap: 6rem;
+}
+
+.header__link {
+    text-decoration: none;
+    color: var(--primary-text);
+}
+
+/* Section Pop It */
+
+.main-pop-it {
+    position: relative;
+    background-image: url("./images/background2.png");
+    background-repeat: no-repeat;
+    background-size: 100rem;
+    background-position: 10rem -10rem;
+    width: 100%;
+    background-color: var(--primary-red);
+    padding-left: 12rem;
+    min-height: 102vh;
+}
+
+.pop-it__container {
+    display: flex;
+}
+
+.pop-it__container-left {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    color: var(--primary-white);
+    justify-content: center;
+    align-items: flex-start;
+    margin-top: 5rem;
+}
+
+.pop-it__title {
+    font-size: 12rem;
+}
+
+.pop-it__description {
+    margin-top: -3rem;
+    font-size: 2rem;
+    font-weight: bold;
+    width: 85%;
+}
+
+.pop-it__button {
+    margin-top: 5rem;
+    border: none;
+    background-color: var(--primary-green);
+    padding: 1rem 6rem;
+    font-size: larger;
+    font-weight: 700;
+}
+
+.main-what-is-pop {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    text-align: center;
+    padding: 6rem 16rem;
+}
+
+.h2-center {
+    font-weight: 800;
+    font-size: x-large;
+}
+
+.main-choose {
+    text-align: center;
+    background-color: var(--primary-green);
+    padding: 6rem;
+}
+
+.items-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem 12rem;
+}
+
+.items-container__item--img {
+    width: 8rem;
+}
+
+.items-container__item--p {
+    font-weight: bold;
+}
+
+.btn-buy {
+    background-color: var(--primary-orange);
+    padding: .5rem 3.5rem;
+    border: none;
+    margin-top: .75rem;
+}
+
+.main-rules {
+    display: flex;
+    background-image: url("./images/bg-grid2.png");
+    background-position: 17rem 10rem;
+    background-repeat: no-repeat;
+    padding: 8rem 12rem;
+    align-items: center;
+    justify-content: center;
+    gap: 5rem;
+    margin-bottom: 5rem;
+    
+}
+
+.photo-rules {
+    width: 35%;
+}
+
+.footer {
+    width: 100%;
+    background-color: var(--primary-black);
+    padding: 2rem 12rem;
+}
+
+.footer__links-ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer__link {
+    color: var(--primary-white);
+}
+
+.footer__link--bold {
+    font-weight: 700;
+    color: var(--primary-white);
+}
+
+a {
+    text-decoration: none;
+}
+
+button {
+    cursor: pointer;
+}
